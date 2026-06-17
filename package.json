@@ -1,0 +1,40 @@
+{
+  "name": "shopctl",
+  "version": "0.1.0",
+  "description": "Agent-native CLI for the DummyJSON products API — demo for the talk 'De APIs a CLIs'",
+  "type": "module",
+  "bin": {
+    "shopctl": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "package.json",
+    "SKILL.md",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "cli",
+    "agent-native",
+    "dummyjson",
+    "commander",
+    "demo"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
